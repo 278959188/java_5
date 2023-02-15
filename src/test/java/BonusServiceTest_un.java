@@ -1,10 +1,10 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BonusServiceTest {
+public class BonusServiceTest_un {
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForRegisteredAndUnderLimit() {
-        BonusService service = new BonusService();
+    void shouldCalculateForUnRegisteredAndUnderLimit() {
+        BonusService_un service = new BonusService_un();
 
         long amount = 1000;
         boolean registered = true;
@@ -16,8 +16,8 @@ public class BonusServiceTest {
     }
 
     @org.junit.jupiter.api.Test
-    void shouldCalculateForRegisteredAndOverLimit() {
-        BonusService service = new BonusService();
+    void shouldCalculateForUnRegisteredAndOverLimit() {
+        BonusService_un service = new BonusService_un();
 
         long amount = 1_000_000;
         boolean registered = true;

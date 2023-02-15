@@ -9,5 +9,15 @@ public class Main {
         expected = 50;
         long bonus = service.calculate(5_000, false);
         System.out.println("2. " + expected + " == + == " + actual);
+
+        BonusService_un service_un = new BonusService_un();
+
+        int expected_un = 150;
+        long actual_un = service.calculate(5_000, true);
+        System.out.println("3. " + expected + " == + == " + actual);
+
+        expected_un = 50;
+        long bonus_un = service.calculate(5_000, false);
+        System.out.println("4. " + expected + " == + == " + actual);
     }
 }
