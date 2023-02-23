@@ -4,27 +4,27 @@ public class BonusServiceTest_un {
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForUnRegisteredAndUnderLimit() {
-        BonusService_un service = new BonusService_un();
+        BonusService_un service_un = new BonusService_un();
 
         long amount = 1000;
-        boolean registered = true;
-        long expected = 30;
+        boolean unRegistered = true;
+        long expected_unRegistered = 30;
 
-        long actual = service.calculate(amount, registered);
+        long actual_unRegistered = service_un.calculate_un(amount, unRegistered);
 
-        assertEquals(expected, actual);
+        assertEquals(expected_unRegistered, actual_unRegistered);
     }
 
     @org.junit.jupiter.api.Test
     void shouldCalculateForUnRegisteredAndOverLimit() {
-        BonusService_un service = new BonusService_un();
+        BonusService_un service_un = new BonusService_un();
 
         long amount = 1_000_000;
-        boolean registered = true;
-        long expected = 500;
+        boolean unRegistered = true;
+        long expected_unRegistered = 500;
 
-        long actual = service.calculate(amount, registered);
+        long actual_unRegistered = service_un.calculate_un(amount, unRegistered);
 
-        assertEquals(expected, actual);
+        assertEquals(expected_unRegistered, actual_unRegistered);
     }
 }
