@@ -10,7 +10,7 @@ public class Main {
         actual = service.calculate(5_000, false);
         System.out.println("2. " + expected + " == + == " + actual);
 
-        BonusService_un service_un = new BonusService_un();
+        BonusServiceUnRegistered service_un = new BonusServiceUnRegistered();
 
         int expected_unRegistered = 75;
         long actual_unRegistered = service_un.calculate_un(2_500, true);
